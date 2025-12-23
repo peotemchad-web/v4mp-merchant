@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>V4MP MERCHANT - Neon Shoes for the Elite</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background: linear-gradient(135deg, #1a1a1a, #2d1b69);
+            color: #fff;
+            overflow-x: hidden;
+        }
+        header {
+            background: linear-gradient(90deg, #8A2BE2, #DA70D6);
+            padding: 1rem;
+            text-align: center;
+            box-shadow: 0 0 20px #DA70D6;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 2.5rem;
+            text-shadow: 0 0 10px #fff;
+        }
+        nav {
+            margin-top: 1rem;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 1rem;
+            text-decoration: none;
+            font-weight: bold;
+            text-shadow: 0 0 5px #DA70D6;
+        }
+        nav a:hover {
+            text-shadow: 0 0 15px #fff;
+        }
+        .hero {
+            background: url('https://via.placeholder.com/1920x600/8A2BE2/FFFFFF?text=V4MP+MERCHANT+Shoes') no-repeat center/cover;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            box-shadow: inset 0 0 50px #DA70D6;
+        }
+        .hero h2 {
+            font-size: 3rem;
+            text-shadow: 0 0 20px #fff;
+        }
+        .products {
+            padding: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+        .products h2 {
+            text-align: center;
+            font-size: 2rem;
+            margin-bottom: 2rem;
+            text-shadow: 0 0 10px #DA70D6;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 2rem;
+        }
+        .product {
+            background: rgba(138, 43, 226, 0.1);
+            border: 2px solid #DA70D6;
+            border-radius: 10px;
+            padding: 1rem;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+            box-shadow: 0 0 10px #8A2BE2;
+        }
+        .product:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px #DA70D6;
+        }
+        .product img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        .product h3 {
+            margin: 1rem 0;
+            color: #fff;
+        }
+        .product p {
+            color: #ccc;
+        }
+        .btn {
+            background: linear-gradient(90deg, #8A2BE2, #DA70D6);
+            color: #fff;
+            border: none;
+            padding: 0.5rem 1rem;
+            border-radius: 5px;
+            cursor: pointer;
+            font-weight: bold;
+            text-shadow: 0 0 5px #fff;
+            transition: box-shadow 0.3s;
+        }
+        .btn:hover {
+            box-shadow: 0 0 15px #DA70D6;
+        }
+        footer {
+            background: #1a1a1a;
+            text-align: center;
+            padding: 1rem;
+            border-top: 2px solid #DA70D6;
+        }
+        footer p {
+            margin: 0;
+            color: #ccc;
+        }
+        @media (max-width: 768px) {
+            .hero h2 {
+                font-size: 2rem;
+            }
+            header h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>V4MP MERCHANT</h1>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#products">Shoes</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+    
+    <section class="hero" id="home">
+        <div>
+            <h2>Step into the Neon Glow</h2>
+            <p>Exclusive shoes for the bold. Shop now and level up your style.</p>
+        </div>
+    </section>
+    
+    <section class="products" id="products">
+        <h2>Featured Shoes</h2>
+        <div class="product-grid">
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200/DA70D6/FFFFFF?text=Neon+High+Tops" alt="Neon High Tops">
+                <h3>Neon High Tops</h3>
+                <p>$99.99 - Glow in the dark kicks for night runs.</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200/8A2BE2/FFFFFF?text=Purple+Boots" alt="Purple Boots">
+                <h3>Purple Boots</h3>
+                <p>$129.99 - Edgy boots with neon accents.</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200/DA70D6/FFFFFF?text=Glow+Sneakers" alt="Glow Sneakers">
+                <h3>Glow Sneakers</h3>
+                <p>$89.99 - UV-reactive for that extra pop.</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+            <div class="product">
+                <img src="https://via.placeholder.com/250x200/8A2BE2/FFFFFF?text=Merchant+Loafers" alt="Merchant Loafers">
+                <h3>Merchant Loafers</h3>
+                <p>$109.99 - Sleek and stylish for the streets.</p>
+                <button class="btn">Add to Cart</button>
+            </div>
+        </div>
+    </section>
+    
+    <footer>
+        <p>&copy; 2023 V4MP MERCHANT. All rights reserved. Powered by Neon Dreams.</p>
+    </footer>
+
+    <script>
+        // Simple alert for "Add to Cart" (placeholder - replace with real cart logic)
+        document.querySelectorAll('.btn').forEach(btn => {
+            btn.addEventListener('click', () => {
+                alert('Added to cart! (This is a demo - integrate with a real e-commerce system.)');
+            });
+        });
+    </script>
+</body>
+</html>
